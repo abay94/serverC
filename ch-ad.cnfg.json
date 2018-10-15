@@ -1,0 +1,29 @@
+{
+  "unit1":{
+    "engine_pcd":{
+      "input":{
+        "model_name":"ARIMA",
+        "model_dir":"/Users/abayaubakirov/Desktop/BACKUP ML SERVER/SprintML+Telegram/SARIMAX/pcd_sarimax_model.pkl",
+        "rate":"10s",
+        "source":"influxdb",
+        "database":"raw_data",
+        "measurement":"unit1",
+        "fields":{
+          "pcd.raw":"",
+          "pcd.max":"",
+          "pcd.min":""
+        }
+      },
+      "output":{
+        "node":"influxdb",
+        "database":"model_data",
+        "measurement":"object_name.channel_name.model_name.unix_time",
+          "fields":{
+            "pcd.live":"",
+            "pcd.redic":"",
+            "pcd.mse_error":""
+            }
+        }
+     }
+  }
+}
