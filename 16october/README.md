@@ -6,4 +6,4 @@ and python script "preprocessed_data_to_ml"
 
 "preprocessed_data_to_ml" responses to whole process
 
-![photo](https://ibb.co/k6Ety0)
+![photo](/Users/abayaubakirov/Downloads/need.png)
