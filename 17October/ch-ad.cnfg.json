@@ -1,0 +1,29 @@
+{
+  "unit1":{
+    "value":{
+      "input":{
+        "model_name":"ARIMA",
+        "model_dir":"npt_sarimax_model_2.pkl",
+        "rate":"10s",
+        "node":"influxdb",
+        "database":"db",
+        "measurement":"meas",
+        "fields":{
+          "pcd.raw":"",
+          "pcd.max":"",
+          "pcd.min":""
+        }
+      },
+      "output":{
+        "node":"influxdb",
+        "database":"db",
+        "measurement":"meas",
+          "fields":{
+            "pcd.live":"",
+            "pcd.redic":"",
+            "pcd.mse_error":""
+            }
+        }
+     }
+  }
+}
