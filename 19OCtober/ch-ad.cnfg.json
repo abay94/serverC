@@ -1,0 +1,56 @@
+{
+  "unit1":{
+    "velocity":{
+      "input":{
+        "ml-core": "flask-core",
+        "model_name":"ARIMA",
+        "model_dir":"npt_sarimax_model_2.pkl",
+        "rate":"1s",
+        "node":"influxdb",
+        "database":"db",
+        "measurement":"meas",
+        "fields":{
+          "pcd.raw":"",
+          "pcd.max":"",
+          "pcd.min":""
+        }
+      },
+      "output":{
+        "node":"influxdb",
+        "database":"db",
+        "measurement":"model_meas",
+          "fields":{
+            "pcd.live":"",
+            "pcd.redic":"",
+            "pcd.mse_error":""
+            }
+        }
+     },
+    "value":{
+      "input":{
+        "ml-core": "tf-core",
+        "model_name":"deka",
+        "model_dir":"",
+        "rate":"1s",
+        "node":"influxdb",
+        "database":"db",
+        "measurement":"meas",
+        "fields":{
+          "pcd.raw":"",
+          "pcd.max":"",
+          "pcd.min":""
+        }
+      },
+      "output":{
+        "node":"influxdb",
+        "database":"db",
+        "measurement":"model_meas",
+          "fields":{
+            "pcd.live":"",
+            "pcd.redic":"",
+            "pcd.mse_error":""
+            }
+        }
+     }
+  }
+}

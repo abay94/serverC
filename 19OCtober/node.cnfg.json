@@ -1,0 +1,31 @@
+{
+  "influxdb":{
+    "type":"influxdb",
+    "host":"192.168.4.33",
+    "port":8086,
+    "username":"",
+    "userpass":""
+  },
+  "opcda-a":{
+    "type":"opcda",
+    "opcname":"OPCServer.WinCC.1",
+    "host":"192.168.1.40",
+    "port":8100
+  },
+  "opcda-b":{
+    "type":"opcda",
+    "opcname":"OPCServer.WinCC.1",
+    "host":"192.168.1.41",
+    "port":8100
+  },
+  "flask-core":{
+    "type":"ml-core",
+    "host":"localhost",
+    "port": 5000
+  },
+  "tf-core":{
+    "type":"ml-core",
+    "host":"192.168.1.104",
+    "port": 6660
+  }
+}
